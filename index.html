@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link href="https://file.myfontastic.com/jdA8wnTic7yEmrHt7sYRtk/icons.css" rel="stylesheet">
+  <title>Página Web</title>
+  <script  src="./js/menu.js"></script>
+</head>
+<body>
+  <!-- header.header>.contenedor>h1.logo+span.icon-menu+nav.nav -->
+  <header class="header">
+    <div class="contenedor">
+      <h1 class="logo">The Elite </h1>
+      <span class="icon-menu" id="btn-menu"></span>
+      <nav class="nav" id="nav">
+        <!--   ul.menu>li.menu_item*4>a-->
+        <ul class="menu">
+          <li class="menu_item"><a class='menu_link select' href="#">Inicio</a></li>
+          <li class="menu_item"><a class='menu_link' href="#section_tit">Programas de entrenamiento</a></li>
+          <li class="menu_item"><a class='menu_link' href="#instal_tit">Nuestro espacio</a></li>
+          <li class="menu_item"><a class='menu_link' href="#social">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--   .banner>img.banner_img+.contenedor>h2.banner_titulo+p.banner_txt -->
+  <div class="banner">
+    <img src="./images/margret.jpg" alt="" class="banner_img">
+
+    <div class="contenedor">
+      <h2 class="banner_titulo">Definí tu cuerpo</h2>
+      <p class="banner_txt">Seguí nuestros programas, alcanzá tus objetivos</p>
+    </div>
+  </div>
+  <main class="main">
+    <div class="contenedor">
+      <!-- section.info>article.info_col*3>img.info_img[src='imgages/img1.jpg']+h2.info_tit{Titulo$}+p.info_txt>lorem15
+     -->
+      <section class="info">
+        <article class="info_col">
+          <img src="./images/img1.jpg" alt="" class="info_img">
+          <h2 class="info_tit">Titulo1</h2>
+          <p class="info_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni explicabo dolores inventore, quasi accusamus alias </p>
+        </article>
+        <article class="info_col">
+          <img src="./images/img2.jpg" alt="" class="info_img">
+          <h2 class="info_tit">Titulo2</h2>
+          <p class="info_txt">Saepe tempora quisquam repellat optio aliquam accusamus reprehenderit iusto, quibusdam odio, sint, magni repudiandae eaque?</p>
+        </article>
+        <article class="info_col">
+          <img src="./images/img7.jpg" alt="" class="info_img">
+          <h2 class="info_tit">Titulo3</h2>
+          <p class="info_txt">Amet, fugit, sunt! Quos, aliquid sint. Quo fugit, tempore suscipit sed alias excepturi reiciendis dignissimos.</p>
+        </article>
+      </section>
+
+        <!-- section.cursos>h2.section_tit+.cursos_col*4>img.cursos_img[src='./images/img2.jpg']+cursos_desc>h3.cursos_tit+p.cursos_txt>lorem5 -->
+      <h2 class="section_tit" id="section_tit">Programas de Entrenamiento</h2>
+      <section class="cursos" id="cursos">
+
+        <div class="cursos_col">
+          <img src="./images/img3.jpg" alt="" class="cursos_img">
+          <div class="cursos_desc">
+            <h3 class="cursos_tit">Crossfit</h3>
+            <p class="cursos_txt">Lorem ipsum dolor sit amet. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consequat.</p>
+          </div>
+        </div>
+        <div class="cursos_col">
+          <img src="./images/img3.jpg" alt="" class="cursos_img">
+          <div class="cursos_desc">
+            <h3 class="cursos_tit">Musculacion</h3>
+            <p class="cursos_txt">Laboriosam ea totam quod officiis. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+        <div class="cursos_col">
+          <img src="./images/img3.jpg" alt="" class="cursos_img">
+          <div class="cursos_desc">
+            <h3 class="cursos_tit">Fitness</h3>
+            <p class="cursos_txt">Sit placeat ex quos quis. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+        <div class="cursos_col">
+          <img src="./images/img3.jpg" alt="" class="cursos_img">
+          <div class="cursos_desc">
+            <h3 class="cursos_tit">Tabata</h3>
+            <p class="cursos_txt">Quasi voluptatem facere laboriosam voluptatibus. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="instal_tit" id="instal_tit">Nuestro espacio</h2>
+      <section class="instal" id="instal">
+        <div class="instal_foto">
+          <img src="./images/gym1.jpg" alt="" class="foto_inst">
+        </div>
+        <div class="instal_foto">
+          <img src="./images/gym2.jpg" alt="" class="foto_inst">
+        </div>
+        <div class="instal_foto">
+          <img src="./images/gym3.jpg" alt="" class="foto_inst">
+        </div>
+        <div class="instal_foto">
+          <img src="./images/gym4.jpg" alt="" class="foto_inst">
+        </div>
+      </section>
+
+    </div>
+      <h2 class="contacto_tit">Contacto</h2>
+  </main>
+  <footer class="footer">
+    <div class="social" id="social">
+      <a href="http:/twitter.com" class="icon-twitter" target="_blank" ></a>
+      <a href="http:/github.com" class="icon-github" target="_blank" ></a>
+      <a href="http:/facebook.com" class="icon-facebook" target="_blank" ></a>
+    </div>
+    <p class="copy">&copy;IndaTech 2019 - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

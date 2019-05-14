@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.{
+  box-sizing: border-box;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1.5px;
+}
+.section_tit, .instal_tit, .contacto_tit{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(221,174,9,1);
+}
+
+/*-----------Estilos de header-----------*/
+.header{
+  height: 60px;
+}
+.header .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .icon-menu{
+  margin: 5px;
+  color: rgba(255,255,255,.96);
+}
+.icon-menu{
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: rgba(221,174,9,1);
+  color:rgba(255,255,255,.96);
+  text-align: center;
+  line-height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav{
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+/*-----------Estilos del menu-----------*/
+.menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu_link{
+  display: block;
+  padding: 15px;
+  background: rgba(221,174,9,1);
+  color:rgba(255,255,255,.96);
+  text-decoration:none;
+}
+.menu_link:hover {
+  background: rgba(255,255,255,.96);
+  color: rgba(221,174,9,1);
+}
+.mostrar{
+  left: 0;
+}
+
+/*-----------Estilos de banner-----------*/
+.banner{
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 30px;
+}
+.banner .contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color:  rgba(255,255,255,.96);
+  text-align: center;
+}
+.banner_titulo{
+  color: #fff;
+}
+.banner_txt{
+  display: none;
+}
+.info_col{
+  background: rgba(221,174,9,1);
+  color:rgba(255,255,255,.96);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/*-----------Estilos de cursos-----------*/
+.cursos_col{
+  position: relative;
+  margin-bottom: 30px;
+}
+.cursos_desc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.4);
+  width: 60%;
+  height: 98%;
+  padding: 5px 0;
+}
+.cursos_tit{
+  font-size: 25px;
+  margin: 5px;
+}
+
+/*-----------Estilos de instalaciones-----------*/
+.fotos_inst{
+  position: absolute;
+  width: 600px;
+}
+.instal_tit{
+  text-align: center;;
+}
+.instal{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+.instal_foto{
+  width: 49.7%;
+  padding-top: 5px ;
+}
+
+/*-----------Estilos de footer-----------*/
+.footer{
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+.footer .social [class^='icon-']{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: #fff 1px solid;
+  line-height: 50px;
+}
+.footer .social [class^='icon-']:hover{
+  background: white;
+  color: black;
+}
+
+/*-----------Estilos responsive-----------*/
+@media (min-width: 480px) {
+  .logo{
+    font-size: 40px;
+    text-shadow: 1px 2px #999;
+  }
+  .banner_titulo{
+    font-size: 30px;
+    margin: 5px 0;
+    text-shadow: 1px 2px #999;
+  }
+  .banner_txt{
+    display: block;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 2px #999;
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+  }
+  .info_col{
+    width: 30%;
+  }
+  .cursos{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+  }
+  .cursos_col{
+    width: 49%;
+  }
+}
